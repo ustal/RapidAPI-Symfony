@@ -1,0 +1,33 @@
+{
+  "name": "ustal/rapidapi-symfony",
+  "description": "test description",
+  "homepage": "https://github.com/ustal/RapidAPI-Symfony",
+  "license": "MIT",
+  "keywords": [
+    "RapidAPI",
+    "Symfony"
+  ],
+  "authors": [
+    {
+      "name": "George Cherenkov",
+      "email": "cherenkov.george@gmail.com",
+      "homepage": "https://github.com/ustal",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">7.0.0",
+    "symfony/symfony": "^3.1",
+    "sensio/framework-extra-bundle": "^3.0",
+    "guzzlehttp/guzzle": "^6.2",
+    "ustal/rapidapi-library": "^1.0.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    }
+  }
+}

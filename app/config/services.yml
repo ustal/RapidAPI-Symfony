@@ -1,0 +1,16 @@
+services:
+  data_validator:
+    class: Service\DataValidator
+    arguments: []
+
+  sender:
+    class: Service\Sender
+    arguments: []
+
+  metadata:
+    class: Service\Metadata
+    arguments: []
+
+  manager:
+    class: Service\Manager
+    arguments: ["@data_validator", "@sender", "@metadata","@request_stack"]
