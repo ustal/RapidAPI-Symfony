@@ -1,0 +1,38 @@
+{
+  "package": "",
+  "tagline": "",
+  "description": "",
+  "image": "",
+  "repo": "",
+  "keywords": [],
+  "accounts": {
+    "domain": "",
+    "credentials": []
+  },
+  "blocks": [
+    {
+      "name": "",
+      "description": "",
+      "method": "",
+      "url": "",
+      "args": [
+        {
+          "name": "clientId",
+          "type": "credentials",
+          "info": "Unique Identifier. You can find it at Admin->Channels->API->OAuth Clients",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    }
+  ]
+}

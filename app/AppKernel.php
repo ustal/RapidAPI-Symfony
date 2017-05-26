@@ -18,7 +18,8 @@ class AppKernel extends Kernel
     {
         $bundles = array(
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
-            new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle()
+            new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+            new GoogleDriveBundle\GoogleDriveBundle()
         );
         return $bundles;
     }
@@ -31,6 +32,6 @@ class AppKernel extends Kernel
 
     protected function configureRoutes(RouteCollectionBuilder $routes)
     {
-        $routes->import(__DIR__ . '/../src/ZendeskCoreBundle/Controller/', '/', 'annotation');
+        $routes->import(__DIR__ . '/../src/GoogleDriveBundle/Controller/', '/', 'annotation');
     }
 }

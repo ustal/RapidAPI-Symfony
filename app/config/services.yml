@@ -1,16 +1,16 @@
 services:
   data_validator:
-    class: Service\DataValidator
+    class: RapidAPI\Service\DataValidator
     arguments: []
 
   sender:
-    class: Service\Sender
+    class: RapidAPI\Service\Sender
     arguments: []
 
   metadata:
-    class: Service\Metadata
+    class: RapidAPI\Service\Metadata
     arguments: []
 
   manager:
-    class: Service\Manager
+    class: RapidAPI\Service\Manager
     arguments: ["@data_validator", "@sender", "@metadata","@request_stack"]
